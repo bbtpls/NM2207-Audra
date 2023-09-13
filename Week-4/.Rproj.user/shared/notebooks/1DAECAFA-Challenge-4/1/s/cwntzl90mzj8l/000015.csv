@@ -1,0 +1,6 @@
+"0","# Enter code here"
+"0","comm_data %>%"
+"0","  select(sender, sentiment) %>%"
+"0","  filter(sentiment >= 0) %>%"
+"0","  arrange(desc(sentiment)) %>%"
+"0","  head(3)"

@@ -1,0 +1,20 @@
+---
+title: "Challenge-1"
+author: "Chua Jieh Yih Audra"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+## Self intro
+I'm a Y3 CNM student who actually transferred from archi to CNM after just one semester at NUS. Because of that, I never got to go for CNM orientation and sometimes I still feel like I missed out, but thankfully I've slowly gathered friends from my other CNM modules over the past semesters.
+
+```{r, out.height= "400px",out.width= "400px",echo=FALSE,eval=TRUE,fig.cap="My current LinkedIn profile picture"}
+knitr::include_graphics("/Users/dishscitadel/Downloads/circle id audra chua.png")
+```
+## Screenshot of layout
+This is my RStudio layout after steps 1-5
+```{r, out.height= "400px",out.width= "400px",echo=FALSE,eval=TRUE,fig.cap="Screenshot of layout"}
+knitr::include_graphics("/Users/dishscitadel/Desktop/school archive/NM2207/Week-1/Challenge-1 screenshot of layout.png")
+```

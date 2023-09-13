@@ -1,0 +1,7 @@
+"0","# Enter code here"
+"0",""
+"0","library(magick)"
+"0","memey <- function(pic, txt){"
+"0","  image_annotate(image_read(pic), txt, size = 200, gravity = ""south"", color = ""red"")"
+"0","}"
+"0","memey(""/Users/dishscitadel/Downloads/IMG_0926.jpeg"",""ugh"")"
