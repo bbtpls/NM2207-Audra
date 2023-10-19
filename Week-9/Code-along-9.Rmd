@@ -1,0 +1,119 @@
+---
+title: "Code-along Week 9"
+author: "Chua Jieh Yih Audra"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  df_print: paged
+  html_document: null
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Tidy Data
+<br>
+
+### 1. Tidy vs Non-Tidy (Slide #8)
+
+```{r, eval=TRUE,echo=TRUE}
+library(tidyverse)
+
+tidydata <- tribble(
+  ~country, ~year, ~cases, ~population,
+  "Afghanistan", 1999, 745, 19987071,
+  "Afghanistan", 2000, 2666, 20595360,
+  "Brazil", 1999, 37737, 172006362,
+  "Brazil", 2000, 80488, 174504898,
+  "China", 1999, 212258, 1272915272,
+  "China", 2000, 213766, 1280428583)
+tidydata
+
+nontidydata <- tribble(
+  ~country,~year,~rate,
+  "Afghanistan", 1999, "745/19987071",
+  "Afghanistan", 2000, "2666/20595360",
+  "Brazil", 1999, "37737/172006362",
+  "Brazil", 2000, "80488/174504898",
+  "China", 1999, "212258/1272915272",
+  "China", 2000, "213766/1280428583")
+nontidydata
+
+```
+<br>
+
+## Tidy-ing data
+
+### 2. Example-1 (Slide #11)
+
+```{r, eval=TRUE,echo=TRUE}
+tidieddata <- nontidydata %>%
+  separate(rate, into = c("cases","population"), sep = "/")
+#call the old one for comparison too
+nontidydata
+tidieddata
+```
+<br>
+
+### 3. Example-1 (cont): turning columns into rows (Slide #12)
+
+```{r, eval=TRUE,echo=TRUE}
+newtidieddata <- tidieddata %>%
+  pivot_longer(
+    cols = cases:population,
+    names_to = "measurement",
+    values_to = "value"
+  )
+newtidieddata
+#now the cases and population columns have become rows with columns measurement type and value
+```
+<br>
+### 4. Example-2 (Slide #14)
+
+```{r, eval=TRUE,echo=TRUE}
+#make dataframe df
+df <- tribble(
+  ~id, ~bp1, ~bp2,
+  "A", 100, 120,
+  "B", 140, 115,
+  "C", 120, 125
+)
+df
+#reshape
+df %>%
+  pivot_longer(
+    cols = bp1:bp2,
+    names_to = "measurement",
+    values_to = "value"
+  )
+```
+<br>
+
+### 5. Example-3 (Slide #18)
+
+```{r, eval=TRUE,echo=TRUE}
+newtidieddata
+newtidieddata %>%
+  pivot_wider(names_from="measurement", values_from="value")
+#now it's reverted! wow
+```
+<br>
+
+### 5. Example-4 (Slide #19)
+
+```{r, eval=TRUE,echo=TRUE}
+df2 <- tribble(
+  ~id, ~measurement, ~value,
+  "A", "bp1", 100,
+  "B", "bp1", 140,
+  "B", "bp2", 115,
+  "A", "bp2", 120,
+  "A", "bp3", 105
+)
+df2
+#reshape
+df2 %>%
+  pivot_wider(names_from = measurement, values_from = value)
+```

@@ -1,0 +1,6 @@
+"0","ggplot(data = penguins, "
+"0","        mapping = aes(x = bill_depth_mm, y = bill_length_mm, colour = species)"
+"0","       ) +"
+"0","  geom_point()"
+"2","Error: object 'penguins' not found
+"

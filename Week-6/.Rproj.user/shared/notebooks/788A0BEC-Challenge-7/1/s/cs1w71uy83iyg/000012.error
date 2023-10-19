@@ -1,0 +1,1 @@
+{"frames":[{"func":"ggplot(data = penguins, mapping = aes(x = bill_depth_mm, y = bill_length_mm, \n    colour = species))","file":"","line_number":0,"end_line_number":0,"character_number":0,"end_character_number":0}],"message":"Error: object 'penguins' not found\n"}

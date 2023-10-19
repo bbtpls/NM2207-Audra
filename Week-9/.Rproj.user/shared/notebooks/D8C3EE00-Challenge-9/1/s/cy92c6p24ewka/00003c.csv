@@ -1,0 +1,6 @@
+"0","#plot"
+"0","ggplot(newbillboard) +"
+"0","  aes(x=week,y=rank) +"
+"0","  geom_point() +"
+"0","  geom_line(aes(group = week))"
+"0",""

@@ -1,0 +1,57 @@
+---
+title: "Challenge Week 9"
+author: "Chua Jieh Yih Audra"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+author: "Chua Jieh Yih Audra"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  df_print: paged
+  html_document: null
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### 1. 
+
+```{r, eval=TRUE,echo=TRUE}
+library(tidyverse)
+
+newbillboard <- billboard %>%
+  pivot_longer(
+    cols = starts_with("wk") ,
+    names_to = "week",
+    values_to = "rank",
+    values_drop_na = TRUE,
+  )
+#make it so only the number shows in the week column
+newbillboard %>% 
+  mutate(week = parse_number(week))
+#plot
+ggplot(newbillboard) +
+  aes(x=week,y=rank) +
+  geom_point() +
+  geom_line(aes(group = week))
+
+```
+<br>
+
+### 2. 
+
+```{r, eval=TRUE,echo=TRUE}
+cms_patient_experience %>%
+  pivot_wider(
+    names_from="measure_cd",
+    values_from="prf_rate",
+    #tell pivot_wider() which column/columns have values that uniquely identify each row
+    id_cols = starts_with("org")
+  )
+```
+
