@@ -1,0 +1,31 @@
+{
+    "id": "8609D584",
+    "path": "~/bbtpls.github.io/about.qmd",
+    "project_path": "about.qmd",
+    "type": "quarto_markdown",
+    "hash": "2479246666",
+    "contents": "",
+    "dirty": false,
+    "created": 1697793979840.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "source_window_id": "",
+        "Source": "Source",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "297:37.5",
+        "cursorPosition": "8,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1697794550,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1697794550320,
+    "read_only": false,
+    "read_only_alternatives": []
+}
