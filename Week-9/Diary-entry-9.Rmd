@@ -1,0 +1,27 @@
+---
+title: "Diary Entry Week 9"
+author: "Chua Jieh Yih Audra"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Finalised topic
+I want to analyse the ratings for Animal Crossing by critics and users, and its sales in relation to that.
+
+<br>
+
+## Data sources I have curated so far
+Critic and User Reviews [https://www.kaggle.com/datasets/jessemostipak/animal-crossing/data?select=critic.csv](https://www.kaggle.com/datasets/jessemostipak/animal-crossing/data?select=critic.csv)
+
+<br>
+Statista on unit sales until June 2023[(https://www.statista.com/statistics/1112631/animal-crossing-new-horizons-sales/](https://www.statista.com/statistics/1112631/animal-crossing-new-horizons-sales/)
+
+<br>
+Villager popularity perhaps? [https://www.kaggle.com/datasets/ampiiere/acnh-villager-popularity/code](https://www.kaggle.com/datasets/ampiiere/acnh-villager-popularity/code)
+
