@@ -1,0 +1,37 @@
+"0","glimpse(data)"
+"1","Rows: 53"
+"1",""
+"1","
+"
+"1","Columns: 25"
+"1",""
+"1","
+"
+"1","$ fips                           [3m[38;5;246m<chr>[39m[23m ""02"", ""01"", ""05"", ""04"", ""06"", ""08"", ""09"", ""11"", ""1…
+$ country                        [3m[38;5;246m<chr>[39m[23m ""US"", ""US"", ""US"", ""US"", ""US"", ""US"", ""US"", ""US"", ""U…
+$ state                          [3m[38;5;246m<chr>[39m[23m ""AK"", ""AL"", ""AR"", ""AZ"", ""CA"", ""CO"", ""CT"", ""DC"", ""D…
+$ county                         [3m[38;5;246m<lgl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ hsa                            [3m[38;5;246m<lgl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ hsaName                        [3m[38;5;246m<lgl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ level                          [3m[38;5;246m<chr>[39m[23m ""state"", ""state"", ""state"", ""state"", ""state"", ""stat…
+$ lat                            [3m[38;5;246m<lgl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ locationId                     [3m[38;5;246m<chr>[39m[23m ""iso1:us#iso2:us-ak"", ""iso1:us#iso2:us-al"", ""iso1:…
+$ long                           [3m[38;5;246m<lgl>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ population                     [3m[38;5;246m<int>[39m[23m 731545, 4903185, 3017804, 7278717, 39512223, 57587…
+$ hsaPopulation                  [3m[38;5;246m<int>[39m[23m NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
+$ metrics                        [3m[38;5;246m<df[,14]>[39m[23m <data.frame[30 x 14]>
+$ riskLevels                     [3m[38;5;246m<df[,6]>[39m[23m <data.frame[30 x 6]>
+$ cdcTransmissionLevel           [3m[38;5;246m<int>[39m[23m 2, 4, 3, 3, 1, 4, 4, 1, 4, 4, 2, 3, 4, 3, 2, 3…
+$ communityLevels                [3m[38;5;246m<df[,2]>[39m[23m <data.frame[30 x 2]>
+$ actuals                        [3m[38;5;246m<df[,19]>[39m[23m <data.frame[30 x 19]>
+$ annotations                    [3m[38;5;246m<df[,30]>[39m[23m <data.frame[30 x 30]>
+$ lastUpdatedDate                [3m[38;5;246m<chr>[39m[23m ""2023-10-30"", ""2023-10-30"", ""2023-10-30"", ""2023…
+$ url                            [3m[38;5;246m<chr>[39m[23m ""https://covidactnow.org/us/alaska-ak"", ""https://c…
+$ metricsTimeseries              [3m[38;5;246m<list>[39m[23m [<data.frame[1334 x 14]>], [<data.frame[1330 x …
+$ actualsTimeseries              [3m[38;5;246m<list>[39m[23m [<data.frame[1334 x 20]>], [<data.frame[1330 x…
+$ riskLevelsTimeseries           [3m[38;5;246m<list>[39m[23m [<data.frame[1334 x 3]>], [<data.frame[1330 x …
+$ cdcTransmissionLevelTimeseries [3m[38;5;246m<list>[39m[23m [<data.frame[1334 x 2]>], [<data.frame[1330 x 2]>]…
+$ communityLevelsTimeseries      [3m[38;5;246m<list>[39m[23m [<data.frame[1334 x 3]>], [<data.frame[1330 x 3]>]…"
+"1",""
+"1","
+"

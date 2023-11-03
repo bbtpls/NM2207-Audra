@@ -1,0 +1,5 @@
+"0","library(httr)"
+"0","library(jsonlite)"
+"0","library(tidyverse)"
+"0","historic_state_data_url <- ""https://api.covidactnow.org/v2/states.timeseries.json?apiKey=63a919bf96cb477aa6be408c71fec11a"""
+"0","raw_data <- GET(historic_state_data_url)"
