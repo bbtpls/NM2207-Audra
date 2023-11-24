@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Audra's Webpage"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - project.qmd
+
+format:
+  html:
+    theme: 
+      light: [united,test.scss]
+    css: styles.css
+    toc: true
+
+editor: visual
+
